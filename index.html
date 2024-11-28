@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caminho das Páginas</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/favv.png" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/coompra.png" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/perfiil.png" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que você precisa!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/bruxa.png" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/ossos.png" alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/glória.png" alt="Livro sobre javascript assertivo da alura books"></div>
+        <div class="swiper-slide"><img src="img/livro a maldição.png" alt="Livro Guia front end" ></div>
+        <div class="swiper-slide"><img src="img/livro o misterio.png" alt="Livro sobre portugol" /></div>
+        <div class="swiper-slide"><img src="img/livro o medico.png" alt="Livro sobre acessibilidade" /></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Nunca saia sozinho </h2>
+          <p class="descrição__texto">
+            Sinopse:
+            Dentro dos muros de uma escola de elite as expectativas são altas e as regras rígidas. Na floresta, próximo ao colégio, há uma pensão abandonada que é utilizada pelos alunos como ponto de encontro noturno. Há um ano, dois estudantes foram mortos em um massacre terrível. Apesar de um professor ter sido condenado pelos assassinatos, muitos mistérios ainda perduram. O mais sinistro é descobrir o porquê de tantos alunos que sobreviveram àquela noite macabra voltaram ao lugar para se matar. Rory Moore e Lane Philips começam a investigar a noite dos assassinatos, em busca de pistas relevantes. Porém, quanto mais descobrem sobre os alunos e aquele jogo perigoso que deu errado, eles se convencem de que algo fora do normal está acontecendo. O jogo não acabou…
+          </p>
+        </div>
+        <img src="img/vc pode gostar.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/favv.png" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/coompra.png" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/livro como vender.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>im
+        <div class="swiper-slide"><img src="img/livro ninguem sai.png" 
+          alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/livro triz.png" 
+          alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" 
+          alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" 
+          alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" 
+          alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/star.png" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Julia Pottinger</h2>
+          <p class="descrição__texto">Julia Pottinger, mais conhecida pelo seu pseudónimo, Julia Quinn, é uma autora americana de best-sellers de romance histórico. Os seus romances foram traduzidos para mais de 41 línguas e apareceram 19 vezes na lista dos mais vendidos do The New York Times.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/autor.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/favv.png" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/coompra.png" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Terror</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">comédia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ficção</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">comédia romantica</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">autoajuda</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">gibis</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Caminho das páginas</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+     spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
